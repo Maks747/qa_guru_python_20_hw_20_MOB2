@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from selene import browser
 
 from data.config import config
-from hw20.utils import attach
+from qa_guru_python_hw20.utils import attach
 
 
 def pytest_addoption(parser):
