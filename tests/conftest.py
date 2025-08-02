@@ -3,6 +3,7 @@ import os
 from appium import webdriver
 from dotenv import load_dotenv
 from selene import browser
+
 from data.config import config
 from hw20.utils import attach
 
