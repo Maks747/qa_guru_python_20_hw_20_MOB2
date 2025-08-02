@@ -1,4 +1,4 @@
-def abs_path_from_project(relative_path: str):
+def path_from_project(relative_path: str):
     import hw20
     from pathlib import Path
 
