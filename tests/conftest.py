@@ -1,5 +1,5 @@
-import pytest
 import os
+import pytest
 from appium import webdriver
 from dotenv import load_dotenv
 from selene import browser

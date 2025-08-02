@@ -1,5 +1,10 @@
-from pathlib import Path
-
-
 def abs_path_from_project(relative_path: str):
-    return str(Path(__file__).parent.joinpath(relative_path))
+    import hw20
+    from pathlib import Path
+
+    return (
+        Path(hw20.__file__)
+        .parent.parent.joinpath(relative_path)
+        .absolute()
+        .__str__()
+    )
