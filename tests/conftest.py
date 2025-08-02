@@ -4,7 +4,7 @@ from appium import webdriver
 from dotenv import load_dotenv
 from selene import browser
 
-from data.config import config
+#from data.config import config
 from qa_guru_python_hw20.utils import attach
 
 
@@ -33,6 +33,7 @@ def context(request):
 
 @pytest.fixture(scope='function', autouse=True)
 def mobile_management(context):
+    from data.config import config
     options = config.to_driver_options(context=context)
 
     browser.config.driver = webdriver.Remote(options.get_capability('remote_url'), options=options)
